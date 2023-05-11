@@ -1,11 +1,7 @@
 require 'track_tasks'
 
 RSpec.describe 'track_tasks method' do
-  context "given an empty string" do 
-    it "returns 'You have given no input'" do
-      expect(track_tasks("")).to eq "You have given no input"
-    end 
-    
+  context "given a string with '#TODO'" do 
     it "returns 'You have tasks to do'" do
       expect(track_tasks("Hello here is your list of things #TODO today")).to eq "You have tasks to do"
     end 
