@@ -24,7 +24,6 @@ class Reminder
 
   def list()
    # Returns a list of tasks to do as strings
-   # Does not include completed ones
   end
 end
 ```
@@ -51,7 +50,7 @@ track_music.add("Barbie Girl")
 track_music.add("Teen Spirit")
 track_music.list # => ["Barbie Girl", "Teen Spirit"]
 
-# 5 
+# 4 
 track_music = TrackMusic.new 
 track_music.add("")
 track_music.list # fails 'No songs given'.
