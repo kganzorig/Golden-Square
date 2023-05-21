@@ -17,6 +17,7 @@ class TodoList
   end
 
   def give_up!
-    # Marks all todos as complete
+    fail "You have no todos" if @todo.empty?
+    @todo.each(&:mark_done!)
   end
 end
