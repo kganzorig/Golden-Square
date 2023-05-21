@@ -70,27 +70,44 @@ _Also design the interface of each class in more detail._
 ```ruby
 class Dish
   def initialize(name, price)
+  @name = name
+  @price = price
   end
 
   def name
+  @name 
   end
 
   def price
+  @price
   end
 
 class Menu
-    def initialize
+    def initialize(items)
+    @items = items
     end 
+
+    def list_of_food
+    end
 end
 
 class Reciept
   def initialize
   end
+
+  def orders
+  end
+
+  def print_receipt
+  end
+
 end
 
 class Text
   def initialize
   end
+
+  #will fill in later
 end
 
 ```
